@@ -15,6 +15,9 @@
 		DDE710D81CCB62D200D0A459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE710D61CCB62D200D0A459 /* LaunchScreen.storyboard */; };
 		DDE710E31CCB62D200D0A459 /* AES128AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE710E21CCB62D200D0A459 /* AES128AppTests.m */; };
 		DDE710EE1CCB62D200D0A459 /* AES128AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE710ED1CCB62D200D0A459 /* AES128AppUITests.m */; };
+		DDE7E91F1CCC9EA4002F9039 /* AesAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE7E9191CCC9EA4002F9039 /* AesAlgorithm.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DDE7E9201CCC9EA4002F9039 /* AESDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE7E91B1CCC9EA4002F9039 /* AESDecode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DDE7E9211CCC9EA4002F9039 /* AESEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE7E91C1CCC9EA4002F9039 /* AESEncode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		DDE710E91CCB62D200D0A459 /* AES128AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AES128AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE710ED1CCB62D200D0A459 /* AES128AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES128AppUITests.m; sourceTree = "<group>"; };
 		DDE710EF1CCB62D200D0A459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE7E9191CCC9EA4002F9039 /* AesAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AesAlgorithm.m; sourceTree = "<group>"; };
+		DDE7E91A1CCC9EA4002F9039 /* AesAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AesAlgorithm.h; sourceTree = "<group>"; };
+		DDE7E91B1CCC9EA4002F9039 /* AESDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESDecode.m; sourceTree = "<group>"; };
+		DDE7E91C1CCC9EA4002F9039 /* AESEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncode.m; sourceTree = "<group>"; };
+		DDE7E91D1CCC9EA4002F9039 /* AesInterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AesInterns.h; sourceTree = "<group>"; };
+		DDE7E91E1CCC9EA4002F9039 /* EfAes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfAes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		DDE710C71CCB62D200D0A459 /* AES128App */ = {
 			isa = PBXGroup;
 			children = (
+				DDE7E9181CCC9EA4002F9039 /* DEV_PROTOCOLLib */,
 				DDE710CB1CCB62D200D0A459 /* AppDelegate.h */,
 				DDE710CC1CCB62D200D0A459 /* AppDelegate.m */,
 				DDE710CE1CCB62D200D0A459 /* ViewController.h */,
@@ -138,6 +148,19 @@
 				DDE710EF1CCB62D200D0A459 /* Info.plist */,
 			);
 			path = AES128AppUITests;
+			sourceTree = "<group>";
+		};
+		DDE7E9181CCC9EA4002F9039 /* DEV_PROTOCOLLib */ = {
+			isa = PBXGroup;
+			children = (
+				DDE7E9191CCC9EA4002F9039 /* AesAlgorithm.m */,
+				DDE7E91A1CCC9EA4002F9039 /* AesAlgorithm.h */,
+				DDE7E91B1CCC9EA4002F9039 /* AESDecode.m */,
+				DDE7E91C1CCC9EA4002F9039 /* AESEncode.m */,
+				DDE7E91D1CCC9EA4002F9039 /* AesInterns.h */,
+				DDE7E91E1CCC9EA4002F9039 /* EfAes.h */,
+			);
+			path = DEV_PROTOCOLLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				TargetAttributes = {
 					DDE710C41CCB62D200D0A459 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = U79R7RLY2D;
 					};
 					DDE710DD1CCB62D200D0A459 = {
 						CreatedOnToolsVersion = 7.2;
@@ -273,6 +297,9 @@
 				DDE710D01CCB62D200D0A459 /* ViewController.m in Sources */,
 				DDE710CD1CCB62D200D0A459 /* AppDelegate.m in Sources */,
 				DDE710CA1CCB62D200D0A459 /* main.m in Sources */,
+				DDE7E9211CCC9EA4002F9039 /* AESEncode.m in Sources */,
+				DDE7E91F1CCC9EA4002F9039 /* AesAlgorithm.m in Sources */,
+				DDE7E9201CCC9EA4002F9039 /* AESDecode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +440,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U79R7RLY2D;
 				INFOPLIST_FILE = AES128App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaomuxueche.iphone.AES128App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +456,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U79R7RLY2D;
 				INFOPLIST_FILE = AES128App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaomuxueche.iphone.AES128App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +535,7 @@
 				DDE710F41CCB62D200D0A459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDE710F51CCB62D200D0A459 /* Build configuration list for PBXNativeTarget "AES128AppTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +544,7 @@
 				DDE710F71CCB62D200D0A459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDE710F81CCB62D200D0A459 /* Build configuration list for PBXNativeTarget "AES128AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +553,7 @@
 				DDE710FA1CCB62D200D0A459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
